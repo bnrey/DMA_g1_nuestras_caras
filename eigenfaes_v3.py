@@ -145,6 +145,6 @@ if __name__ == "__main__":
     scaler, pca, knn, label_dict = entrenar_modelo_facial(directorio_entrenamiento)
     
     # Ruta a imagen de prueba
-    nueva_imagen_path = "../Eigenfaces/test/test6.jpg"
+    nueva_imagen_path = "../Eigenfaces/test/test7.jpg"
     # Predecir cara
     predecir_cara(nueva_imagen_path, scaler, pca, knn, label_dict)

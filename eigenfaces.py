@@ -7,7 +7,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 
 # Ruta donde están las imágenes
-image_folder = "/Users/noeliarey/Documents/Maestria/codigo/DMA/Eigenfaces/Train"
+train_image_folder = "..Eigenfaces/train_fotos"
+test_image_folder = "..Eigenfaces/test_fotos"
 
 # Dimensión fija para todas las imágenes
 IMG_SIZE = (64, 64)
@@ -17,8 +18,8 @@ X = []  # Características (imágenes aplanadas)
 y = []  # Etiquetas (nombre de la clase de cada imagen)
 
 # Leer imágenes desde la carpeta
-for label, folder in enumerate(os.listdir(image_folder)):  # Suponiendo que cada clase tiene su propia carpeta
-    folder_path = os.path.join(image_folder, folder)
+for label, folder in enumerate(os.listdir(train_image_folder)):  # Suponiendo que cada clase tiene su propia carpeta
+    folder_path = os.path.join(train_image_folder, folder)
     
     if os.path.isdir(folder_path):  # Verificar que es una carpeta
         for file in os.listdir(folder_path):
