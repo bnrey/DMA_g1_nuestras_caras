@@ -1,0 +1,15 @@
+# Archivos de sistema
+.DS_Store
+
+# Cachés de Python
+__pycache__/
+*.pyc
+
+# Configuración del editor
+.vscode/
+
+test_fotos/.DS_Store
+train_fotos/.DS_Store
+
+# Archivos del sistema operativo o duplicados
+Thumbs.db
