@@ -57,8 +57,8 @@ Github/
 
 ## Pasos para la ejecución del Proyecto
 
-1. *Clonar notebook 3_Predecir.ipynb en el entorno de colab*
-2. *Carga y procesamiento de nuevas imágenes:*
+1. **Clonar notebook 3_Predecir.ipynb en el entorno de colab.**
+2. **Carga y procesamiento de nuevas imágenes:**
 Las imágenes se cargan manualmente desde el entorno de ejecución. A continuación, se detectan los rostros y se aplican los mismos pasos de preprocesamiento utilizados en el dataset original, incluyendo la estandarización y la proyección al espacio reducido mediante Isomap.
-3. *Visualización de resultados:*
+3. **Visualización de resultados:**
 Como resultado, se genera un nuevo dataframe que contiene la predicción para cada imagen procesada, indicando a qué persona fue asignada o, en su defecto, si fue clasificada como intruso.
