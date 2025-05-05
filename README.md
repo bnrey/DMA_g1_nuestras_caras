@@ -1,7 +1,7 @@
 # Nuestras Caras
 
 Este repositorio contiene el trabajo práctico "Nuestras Caras", desarrollado para la materia Data Mining Avanzado.
-El proyecto se enfoca en la implementación de un sistema de reconocimiento facial, utilizando la técnica de eigenfaces para representar los rostros y una red neuronal multicapa (MLP) que se encarga de la clasificación final de los rostros procesados.
+El proyecto se enfoca en la implementación de un sistema de reconocimiento facial, utilizando la técnica de Isomap para la reducción de dimensionalidad y selección de componentes, y el algoritmo de Backpropagation para el entrenamiento de una red neuronal multicapa.
 
 ---
 
