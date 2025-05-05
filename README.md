@@ -36,18 +36,27 @@ Se cargan los modelos entrenados para predecir sobre nuevas imágenes. Se evalú
 - Evaluar el rendimiento del modelo sobre datos de test.
 - Integrar herramientas de procesamiento de imágenes y machine learning en un flujo de trabajo reproducible.
 
-  plaintext
-/tarea1-grupo1/
-├── /datos_crudos/                             
-
-├── README.md                                  # Documentación del proyecto
-
+```plaintext
+MyDrive/
+└── DMA_Eigenfaces/
+    ├── notebooks/
+    │   ├── 1_procesamiento.ipynb
+    │   ├── 2_entrenamiento.ipynb
+    │   └── 3_prediccion.ipynb
+    ├── src/
+    │   ├── procesar_imagenes.py
+    │   └── utilidades_red.py
+    ├── Output/
+    │   ├── rostros_procesados/
+    │   ├── isomap_train.pkl
+    │   └── red.pkl
+    └── README.md
+├── README.md   # Documentación del proyecto
+```
 
 ## Ejecución del Proyecto
 
 1- Agregar imágenes: colocar las imágenes en formato .jpg o .jpeg dentro de la carpeta:
 03_Predecir.ipynb/fotos_nuevas
-
 2- Ejecutar la notebook: abrir y ejecutar el archivo 3_Predecir.ipynb.
-
 3- Verificación de resultados: al finalizar la ejecución, se mostrará el nombre de la persona correspondiente a cada imagen, según la etiqueta predicha por el modelo.
