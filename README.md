@@ -53,7 +53,6 @@ Github/
     │   ├── red/
     │       ├── isomap.pkl
     │       └── scaler.pkl
-    ├── fotos_nuevas/
     └── README.md
 ├── README.md  
 ```
