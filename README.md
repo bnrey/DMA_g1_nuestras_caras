@@ -35,6 +35,10 @@ Se cargan los modelos entrenados para predecir sobre nuevas imágenes. Se evalú
 - Entrenar una red neuronal MLP para clasificar los rostros con alta precisión.
 - Evaluar el rendimiento del modelo sobre datos de test.
 - Integrar herramientas de procesamiento de imágenes y machine learning en un flujo de trabajo reproducible.
+- 
+### Estructura del Proyecto
+
+La estructura de archivos en el repositorio es la siguiente:
 
 ```plaintext
 MyDrive/
