@@ -1,7 +1,6 @@
 # Nuestras Caras
 
-Este repositorio contiene el trabajo práctico "Nuestras Caras", desarrollado para la materia Data Mining Avanzado.
-El proyecto se enfoca en la implementación de un sistema de reconocimiento facial, utilizando la técnica de Isomap para la reducción de dimensionalidad y selección de componentes, y el algoritmo de Backpropagation para el entrenamiento de una red neuronal multicapa.
+Este repositorio contiene el trabajo práctico "Nuestras Caras", realizado en el marco de la asignatura Data Mining Avanzado. El proyecto tiene como eje la implementación de un sistema de reconocimiento facial, empleando la técnica de Isomap para la reducción de dimensionalidad y selección de características, junto con el algoritmo de Backpropagation para entrenar una red neuronal multicapa. El objetivo fue detectar y clasificar los rostros de los estudiantes de la materia.
 
 ---
 
@@ -14,11 +13,9 @@ El proyecto se enfoca en la implementación de un sistema de reconocimiento faci
 
 ## Descripción del Proyecto
 
-Este proyecto implementa un sistema de reconocimiento facial utilizando la técnica de eigenfaces para la representación de rostros.
+El trabajo se estructura en tres etapas, organizadas en notebooks:
 
-El flujo de trabajo se estructura en tres etapas, organizadas en notebooks:
-
-**1_Procesamiento.ipynb**
+**1_Procesar.ipynb**
 Se realiza el procesamiento inicial de las imágenes. Se detectan los rostros utilizando un modelo preentrenado de OpenCV (DNN), se recortan y estandarizan. Luego, se aplica el algoritmo Isomap para reducir la dimensionalidad y generar un conjunto de variables numéricas representativas de cada rostro.
 
 **2_Entrenar.ipynb**
@@ -34,33 +31,35 @@ Se cargan los modelos entrenados para predecir sobre nuevas imágenes. Se evalú
 - Aplicar técnicas de reducción de dimensionalidad (Isomap) para representar las imágenes en un espacio compacto.
 - Entrenar una red neuronal MLP para clasificar los rostros con alta precisión.
 - Evaluar el rendimiento del modelo sobre datos de test.
-- Integrar herramientas de procesamiento de imágenes y machine learning en un flujo de trabajo reproducible.
 
 ## Estructura del Proyecto
 
 La estructura de archivos en el repositorio es la siguiente:
 
 ```plaintext
-MyDrive/
+Github/
 └── DMA_Eigenfaces/
     ├── notebooks/
-    │   ├── 1_procesamiento.ipynb
-    │   ├── 2_entrenamiento.ipynb
-    │   └── 3_prediccion.ipynb
+    │   ├── 1_Procesar.ipynb
+    │   ├── 2_Entrenar.ipynb
+    │   └── 3_Predecir.ipynb
     ├── src/
     │   ├── procesar_imagenes.py
-    │   └── utilidades_red.py
-    ├── Output/
-    │   ├── rostros_procesados/
-    │   ├── isomap_train.pkl
-    │   └── red.pkl
+    │   └── multiperceptron.py
+    ├── modelos/
+    │   ├── red/
+    │       ├── data.pkl
+    │       └── red.pkl
+    │   ├── red/
+    │       ├── isomap.pkl
+    │       └── scaler.pkl
+    ├── fotos_nuevas/
     └── README.md
-├── README.md   # Documentación del proyecto
+├── README.md  
 ```
 
 ## Ejecución del Proyecto
 
-1- Agregar imágenes: colocar las imágenes en formato .jpg o .jpeg dentro de la carpeta:
-03_Predecir.ipynb/fotos_nuevas
+1- Agregar imágenes: colocar las imágenes en formato .jpg o .jpeg dentro de la carpeta fotos_nuevas.
 2- Ejecutar la notebook: abrir y ejecutar el archivo 3_Predecir.ipynb.
 3- Verificación de resultados: al finalizar la ejecución, se mostrará el nombre de la persona correspondiente a cada imagen, según la etiqueta predicha por el modelo.
