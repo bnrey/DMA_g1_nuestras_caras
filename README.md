@@ -55,13 +55,10 @@ Github/
 ├── README.md  
 ```
 
-## Ejecución del Proyecto
+## Pasos para la ejecución del Proyecto
 
-1. *Carga y procesamiento de nuevas imágenes:*
+1. *Clonar notebook 3_Predecir.ipynb en el entorno de colab*
+2. *Carga y procesamiento de nuevas imágenes:*
 Las imágenes se cargan manualmente desde el entorno de ejecución. A continuación, se detectan los rostros y se aplican los mismos pasos de preprocesamiento utilizados en el dataset original, incluyendo la estandarización y la proyección al espacio reducido mediante Isomap.
-
-2. *Ejecución de la notebook de predicción:*
-Se debe abrir y ejecutar el archivo 3_Predecir.ipynb, el cual utiliza el modelo de red neuronal multiperceptrón previamente entrenado y guardado en disco para realizar las predicciones sobre las nuevas imágenes.
-
 3. *Visualización de resultados:*
 Como resultado, se genera un nuevo dataframe que contiene la predicción para cada imagen procesada, indicando a qué persona fue asignada o, en su defecto, si fue clasificada como intruso.
