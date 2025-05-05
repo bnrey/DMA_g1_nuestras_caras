@@ -14,7 +14,7 @@ El proyecto se enfoca en la implementación de un sistema de reconocimiento faci
 
 ## Descripción del Proyecto
 
-Este proyecto implementa un sistema de reconocimiento facial utilizando la técnica de Eigenfaces para la representación de rostros, combinada con una red neuronal MLP (Multilayer Perceptron) como clasificador final.
+Este proyecto implementa un sistema de reconocimiento facial utilizando la técnica de eigenfaces para la representación de rostros.
 
 El flujo de trabajo se estructura en tres etapas, organizadas en notebooks:
 
