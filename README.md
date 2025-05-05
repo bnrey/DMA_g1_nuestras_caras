@@ -47,10 +47,8 @@ Github/
     │   ├── procesar_imagenes.py
     │   └── multiperceptron.py
     ├── modelos/
-    │   ├── red/
     │       ├── data.pkl
     │       └── red.pkl
-    │   ├── red/
     │       ├── isomap.pkl
     │       └── scaler.pkl
     └── README.md
