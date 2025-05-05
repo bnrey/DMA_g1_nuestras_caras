@@ -15,13 +15,13 @@ Este repositorio contiene el trabajo práctico "Nuestras Caras", realizado en el
 
 El trabajo se estructura en tres etapas, organizadas en notebooks:
 
-**1_Procesar.ipynb**
+**1_Procesar.ipynb:**
 Se realiza el procesamiento inicial de las imágenes. Se detectan los rostros utilizando un modelo preentrenado de OpenCV (DNN), se recortan y estandarizan. Luego, se aplica el algoritmo Isomap para reducir la dimensionalidad y generar un conjunto de variables numéricas representativas de cada rostro.
 
-**2_Entrenar.ipynb**
+**2_Entrenar.ipynb:**
 Se entrena una red neuronal MLP con los datos procesados. Se prueban distintas configuraciones: número de capas ocultas, cantidad de neuronas, funciones de activación y semillas aleatorias. Se calculan métricas de error en el conjunto de entrenamiento y se guarda el modelo final para su posterior aplicación.
 
-**3_Predecir.ipynb**
+**3_Predecir.ipynb:**
 Se cargan los modelos entrenados para predecir sobre nuevas imágenes. Se evalúa el rendimiento sobre datos de test, se calcula la tasa de error y se genera un informe con los resultados de clasificación. Además, se visualiza el desempeño comparando clases reales y predichas.
 
 
@@ -57,11 +57,11 @@ Github/
 
 ## Ejecución del Proyecto
 
-1. *Carga y procesamiento de nuevas imágenes*
+1. *Carga y procesamiento de nuevas imágenes:*
 Las imágenes se cargan manualmente desde el entorno de ejecución. A continuación, se detectan los rostros y se aplican los mismos pasos de preprocesamiento utilizados en el dataset original, incluyendo la estandarización y la proyección al espacio reducido mediante Isomap.
 
-2. *Ejecución de la notebook de predicción*
+2. *Ejecución de la notebook de predicción:*
 Se debe abrir y ejecutar el archivo 3_Predecir.ipynb, el cual utiliza el modelo de red neuronal multiperceptrón previamente entrenado y guardado en disco para realizar las predicciones sobre las nuevas imágenes.
 
-3. *Visualización de resultados*
+3. *Visualización de resultados:*
 Como resultado, se genera un nuevo dataframe que contiene la predicción para cada imagen procesada, indicando a qué persona fue asignada o, en su defecto, si fue clasificada como intruso.
