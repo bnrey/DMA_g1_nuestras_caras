@@ -37,22 +37,20 @@ Se cargan los modelos entrenados para predecir sobre nuevas imágenes. Se evalú
 La estructura de archivos en el repositorio es la siguiente:
 
 ```plaintext
-Github/
-└── DMA_Eigenfaces/
-    ├── notebooks/
-    │   ├── 1_Procesar.ipynb
-    │   ├── 2_Entrenar.ipynb
-    │   └── 3_Predecir.ipynb
-    ├── src/
-    │   ├── procesar_imagenes.py
-    │   └── multiperceptron.py
-    ├── modelos/
-    │       ├── data.pkl
-    │       └── red.pkl
-    │       ├── isomap.pkl
-    │       └── scaler.pkl
-    └── README.md
-├── README.md  
+/DMA_g1_nuestras_caras/
+|── /notebooks/
+│   ├── 1_Procesar.ipynb
+│   ├── 2_Entrenar.ipynb
+│   └── 3_Predecir.ipynb
+├── src/
+│   ├── procesar_imagenes.py
+│   └── multiperceptron.py
+├── modelos/
+│       ├── data.pkl
+│       └── red.pkl
+│       ├── isomap.pkl
+│       └── scaler.pkl
+└── README.md 
 ```
 
 ## Pasos para la ejecución del Proyecto
